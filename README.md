@@ -1,2 +1,2 @@
 # ReproducibilityClass
-This repository will be used for course assignments
+This repository will be used for course assignments.
