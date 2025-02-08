@@ -23,10 +23,11 @@ zdf$zsquared<-(zdf$zvec^2)
 zdf
 
 #To subset the dataframe with the subset() function to only include values of zsquared greater than 10 and less than 100 
-subset(zdf$zsquared,zdf$zsquared>10&zdf$zsquared<100)
+subset(zdf,zsquared>10 & zsquared<100)
 
 #To subset the dataframe without the subset() function to only include values of zsquared greater than 10 and less than 100
-zdf$zsquared[(zdf$zsquared>10)&(zdf$zsquared<100)]
+zdf[zdf$zsquared>10 & zdf$zsquared<100,]
+
 
 #To subset the zdf dataframe to only include the values on row 26
 subset(zdf[26,])
