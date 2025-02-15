@@ -1,5 +1,5 @@
 # loading data in R
-datum <- read.csv("/Users/Mamata/Desktop/Reproducibility\ in\ Science/Data\ Visualization\ 1/MycotoxinData.csv",na.strings = "na")
+datum <- read.csv("MycotoxinData.csv",na.strings = "na")
 
 #loading library for ggplot
 library(ggplot2)
@@ -107,3 +107,4 @@ ggplot(datum, aes(x=Treatment, y=DON, fill=Cultivar)) +
   xlab("")+
   ylab("DON (ppm)") +
   facet_wrap(~Cultivar)
+
